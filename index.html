@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gopal Kumar</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#000000,#071e35,#0066ff);
+    color:white;
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:430px;
+    text-align:center;
+    padding:35px 25px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.10);
+    backdrop-filter:blur(12px);
+    box-shadow:0 15px 50px rgba(0,0,0,.6);
+    animation:cardIn 1s ease;
+}
+
+@keyframes cardIn{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.profile{
+    width:135px;
+    height:135px;
+    margin:auto;
+    border-radius:50%;
+    overflow:hidden;
+    border:4px solid white;
+    box-shadow:0 0 30px #008cff;
+    animation:photo 3s infinite alternate;
+}
+
+@keyframes photo{
+    from{box-shadow:0 0 15px #008cff;}
+    to{box-shadow:0 0 35px #00ccff;}
+}
+
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+h1{
+    margin-top:20px;
+    font-size:34px;
+}
+
+.tagline{
+    margin-top:8px;
+    color:#ddd;
+}
+
+.buttons{
+    display:flex;
+    flex-direction:column;
+    gap:13px;
+    margin-top:28px;
+}
+
+.btn{
+    display:block;
+    padding:14px;
+    border-radius:30px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.2);
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    background:#0077ff;
+    box-shadow:0 0 20px #0077ff;
+}
+
+.about{
+    margin-top:28px;
+    padding:20px;
+    border-radius:18px;
+    background:rgba(0,0,0,.25);
+}
+
+.about h2{
+    margin-bottom:10px;
+}
+
+.about p{
+    color:#ddd;
+    line-height:1.6;
+}
+
+footer{
+    margin-top:25px;
+    color:#aaa;
+    font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="profile">
+        <img src="gopal.jpg" alt="">
+    </div>
+
+    <h1>Gopal Kumar</h1>
+
+    <p class="tagline">
+        Welcome to my personal website ❤️
+    </p>
+
+    <div class="buttons">
+
+        <!-- Instagram -->
+        <a class="btn"
+           href="https://www.instagram.com/gopal____singh____chauhan/"
+           target="_blank">
+            📸 Instagram
+        </a>
+
+        <!-- WhatsApp -->
+        <a class="btn"
+           href="https://wa.me/916204595254"
+           target="_blank">
+            💬 WhatsApp
+        </a>
+
+        <!-- YouTube -->
+        <a class="btn"
+           href="https://www.youtube.com/"
+           target="_blank">
+            ▶️ YouTube
+        </a>
+
+    </div>
+
+    <div class="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! My name is Gopal Kumar.
+            Welcome to my personal website.
+        </p>
+    </div>
+
+    <footer>
+        © 2026 Gopal Kumar
+    </footer>
+
+</div>
+
+</body>
+</html>
